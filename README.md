@@ -12,5 +12,5 @@ stock prediction via lstm using pytorch
   
 ### train and validate
 ```python
-pyhton ./lstm_stock_pred_pytorch.py --data_path ./dataset_1.csv
+pyhton ./lstm_stock_pred_pytorch.py -data_path=./dataset_1.csv
 ```
