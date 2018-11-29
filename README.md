@@ -15,4 +15,4 @@ stock prediction via lstm using pytorch
 pyhton ./lstm_stock_pred_pytorch.py -data_path=./dataset_1.csv
 ```
 ### result
-![result][./result.png]
+![result](./result.png)
