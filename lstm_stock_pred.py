@@ -128,8 +128,9 @@ def eval_plot(model, dataloader):
     #plot
     fig, ax = plt.subplots()
     data_x = list(range(len(preds)))
-    ax.plot(data_x, preds, **{"color":"blue", "linestyle":"-.",  "marker":","})
-    ax.plot(data_x, labels, **{"color":"red", "linestyle":":", "marker":","})
+    ax.plot(data_x, preds, **{"label":"pred", "color":"blue", "linestyle":"-.",  "marker":","})
+    ax.plot(data_x, labels, **{"label":"label",  "color":"red", "linestyle":":", "marker":","})
+    plt.legend()
     plt.show()
 
 
