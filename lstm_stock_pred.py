@@ -1,5 +1,5 @@
 #reference: https://blog.csdn.net/mylove0414/article/details/55805974
-
+#reference:https://github.com/louisenaud/stock_prediction/blob/master/src/run.py
 
 import pandas as pd
 import numpy as np
@@ -13,7 +13,7 @@ from torch.autograd import Variable
 import argparse
 
 parser = argparse.ArgumentParser("lstm")
-parser.add_argument("--data_path", type=str, default="./data/stock_dataset/dataset_1.csv", help="dataset path")
+parser.add_argument("-data_path", type=str, default="./data/stock_dataset/dataset_1.csv", help="dataset path")
 
 args = parser.parse_args()
 
