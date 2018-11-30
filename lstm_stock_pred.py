@@ -12,8 +12,11 @@ import tqdm
 from torch.autograd import Variable
 import argparse
 
+torch.random.manual_seed(0)
+np.random.seed(0)
+
 parser = argparse.ArgumentParser("lstm")
-parser.add_argument("-data_path", type=str, default="./data/stock_dataset/dataset_1.csv", help="dataset path")
+parser.add_argument("-data_path", type=str, default="./stock_dataset/dataset_1.csv", help="dataset path")
 
 args = parser.parse_args()
 
@@ -153,8 +156,6 @@ def main():
             eval_loss = eval_once(model, val_loader)
             print("stage: test, epoch:{:5d}, loss:{:6.3f}".format(epoch_idx, eval_loss))
     eval_plot(model, val_loader)
-
-
 
 
 
